@@ -158,6 +158,42 @@ pre {
   font-size: 15px;
 }
 
+.connect {
+  padding: 70px 8%;
+  text-align: center;
+  background: #0f172a;
+}
+
+.connect h2 {
+  color: #38bdf8;
+  margin-bottom: 30px;
+  font-size: 34px;
+}
+
+.connect-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.connect-links a {
+  text-decoration: none;
+  background: #1e293b;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 12px;
+  font-size: 18px;
+  border: 1px solid #334155;
+  transition: 0.3s;
+}
+
+.connect-links a:hover {
+  background: #2563eb;
+  transform: translateY(-5px);
+  border-color: #38bdf8;
+}
+
 footer {
   text-align: center;
   padding: 35px;
