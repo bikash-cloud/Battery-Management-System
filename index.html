@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Battery Intelligence Engine</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="hero">
+    <nav>
+      <h2>🔋 Battery Intelligence Engine</h2>
+      <a href="https://github.com/bikash-cloud/Battery-Management-System" target="_blank">GitHub</a>
+    </nav>
+
+    <div class="hero-content">
+      <h1>Adaptive Multi-Cell Battery Intelligence Engine</h1>
+      <p>
+        A production-grade ESP32 based Battery Management System simulation
+        for monitoring a 4-cell lithium battery pack in real time.
+      </p>
+
+      <div class="buttons">
+        <a href="https://wokwi.com/projects/468354841728793601" target="_blank">View Wokwi Simulation</a>
+        <a href="https://github.com/bikash-cloud/Battery-Management-System" target="_blank">View Source Code</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="section">
+    <h2>Project Overview</h2>
+    <p>
+      This project monitors four simulated lithium battery cells using ESP32 ADC inputs.
+      It calculates individual cell voltages, pack voltage, average voltage, imbalance
+      percentage, strongest cell, weakest cell, SOC, active faults, and battery health status.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2>Key Features</h2>
+    <div class="grid">
+      <div class="card">4-Cell Voltage Monitoring</div>
+      <div class="card">Pack Voltage Calculation</div>
+      <div class="card">Average Voltage Calculation</div>
+      <div class="card">Strongest Cell Detection</div>
+      <div class="card">Weakest Cell Detection</div>
+      <div class="card">Imbalance Percentage</div>
+      <div class="card">SOC Estimation</div>
+      <div class="card">Battery Health Classification</div>
+      <div class="card">Active Fault Detection</div>
+      <div class="card">Recommendation Engine</div>
+    </div>
+  </section>
+
+  <section class="section dark">
+    <h2>Battery Health States</h2>
+    <div class="status-box">
+      <span>Healthy</span>
+      <span>Minor Imbalance</span>
+      <span>Critical Imbalance</span>
+      <span>Pack Failure</span>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>System Architecture</h2>
+    <div class="architecture">
+      <div>4 Potentiometers<br><small>Simulated Cells</small></div>
+      <div>ESP32 ADC</div>
+      <div>Voltage Conversion</div>
+      <div>Battery Engine</div>
+      <div>Fault Detection</div>
+      <div>Serial Dashboard</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Software Modules</h2>
+    <pre>
+Battery-Management-System/
+├── sketch.ino
+├── config.h
+├── adc_reader.h
+├── adc_reader.cpp
+├── battery_engine.h
+├── battery_engine.cpp
+├── diagram.json
+├── README.md
+├── index.html
+├── style.css
+└── script.js
+    </pre>
+  </section>
+
+  <section class="section dark">
+    <h2>Live Simulation</h2>
+    <p>
+      The complete project can be tested online using Wokwi. Rotate the potentiometers
+      to simulate changing cell voltages and observe the real-time battery health output.
+    </p>
+    <a class="main-btn" href="https://wokwi.com/projects/468354841728793601" target="_blank">
+      Open Wokwi Simulation
+    </a>
+  </section>
+
+  <section class="section">
+    <h2>Sample Output</h2>
+    <pre>
+BATTERY INTELLIGENCE ENGINE
+
+Cell 1 : 1.61 V [NORMAL]
+Cell 2 : 0.56 V [UNDER VOLTAGE]
+Cell 3 : 3.30 V [OVER VOLTAGE]
+Cell 4 : 0.09 V [UNDER VOLTAGE]
+
+Pack Voltage      : 5.87 V
+Average Voltage   : 1.47 V
+Battery SOC       : 44.5 %
+Strongest Cell    : Cell 3
+Weakest Cell      : Cell 4
+Imbalance         : 219.01 %
+Battery Status    : Pack Failure
+
+Active Faults:
+- Cell 2 Under Voltage
+- Cell 3 Over Voltage
+- High Cell Imbalance
+- Pack Failure Condition
+    </pre>
+  </section>
+
+  <section class="section">
+    <h2>Technologies Used</h2>
+    <div class="grid">
+      <div class="card">ESP32</div>
+      <div class="card">Arduino C++</div>
+      <div class="card">Wokwi Simulator</div>
+      <div class="card">GitHub</div>
+      <div class="card">GitHub Pages</div>
+      <div class="card">Embedded C++</div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Developed by <strong>BIKASH SWAIN</strong></p>
+    <p>B.Tech ECE | Embedded Systems | Battery Intelligence</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
